@@ -17,13 +17,41 @@ h4 {
 	font-weight: 400;
 	margin-bottom: 30px;
 }
+.slideshow {
+	width: 100%;
+	height: 850px;
+	background-position: center center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	backface-visibility: hidden;
+	animation: slideBg 30s linear infinite 0s;
+	animation-timing-function: ease-in-out;
+	position: absolute;
+	top: 0;
+	opacity: 0.7;
+}
 .jumbotron {
-	/* background-color: #e37c6b	; */
-	background: rgb(247, 227, 144);
-	background: linear-gradient(152deg, rgba(247, 227, 144, 1) 33%, rgba(228, 124, 106, 1) 100%);
 	color: #fff;
 	padding: 200px 25px;
 	font-family: Montserrat, sans-serif;
+	width: 100%;
+}
+#first {
+	position: absolute;
+	top: 0;
+	height: 850px;
+	padding-top: 350px;
+	background-color: transparent;
+	/* overflow: hidden; */
+}
+#first .col-sm {
+	position: absolute;
+	bottom: 0;
+	left: 50%;
+	transform: translateX(-50%);
+}
+#about {
+	padding-top: 900px;
 }
 .container-fluid {
 	padding: 60px 50px;
@@ -125,12 +153,11 @@ h4 {
 }
 .navbar-nav li a:hover,
 .navbar-nav li.active a {
-	color: #e37c6b !important;
-	background-color: #fff !important;
+	color: #fff !important;
+	background-color: transparent !important;
 }
 .navbar-default .navbar-toggle {
 	border-color: transparent;
-	color: #fff !important;
 }
 .navbar-brand img {
 	width: 20px;
@@ -211,5 +238,22 @@ footer .glyphicon {
 @media screen and (max-width: 480px) {
 	.logo {
 		font-size: 150px;
+	}
+}
+@keyframes slideBg {
+	0% {
+		background-image: url('./assets/images/bg1.jpg');
+	}
+	25% {
+		background-image: url('./assets/images/bg2.jpg');
+	}
+	50% {
+		background-image: url('./assets/images/bg3.jpg');
+	}
+	75% {
+		background-image: url('./assets/images/bg4.jpg');
+	}
+	100% {
+		background-image: url('./assets/images/bg5.jpg');
 	}
 }
