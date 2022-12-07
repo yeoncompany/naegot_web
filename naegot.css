@@ -40,9 +40,7 @@ h4 {
 	position: absolute;
 	top: 0;
 	height: 100vh;
-	padding-top: 350px;
 	background-color: transparent;
-	/* overflow: hidden; */
 }
 #first .col-sm {
 	position: absolute;
@@ -51,7 +49,7 @@ h4 {
 	transform: translateX(-50%);
 }
 #about {
-	padding-top: 900px;
+	padding-top: 100vh;
 }
 .container-fluid {
 	padding: 60px 50px;
@@ -190,8 +188,7 @@ footer .glyphicon {
 	top: 100px;
 	left: 80px;
 	border-radius: 10px;
-	box-shadow: rgba(247, 227, 146, 1) 0px 0px 0px 2px, rgba(247, 227, 146, 1) 0px 4px 6px -1px,
-		rgba(247, 227, 146, 1) 0px 1px 0px inset;
+	box-shadow: rgba(247, 227, 146, 1) 0px 0px 0px 2px, rgba(247, 227, 146, 1) 0px 4px 6px -1px, rgba(247, 227, 146, 1) 0px 1px 0px inset;
 }
 @keyframes slide {
 	0% {
@@ -223,16 +220,23 @@ footer .glyphicon {
 		margin-bottom: 35px;
 	}
 	.col-sm-6 img {
-		width: 250px;
+		width: 25vh;
 	}
 	img.img-absolute {
-		width: 220px;
+		width: 25vh;
 		left: 50% !important;
 		transform: translate(-25%);
 	}
 	.col-sm-6.col-txt {
 		height: auto;
 		padding-top: 0;
+	}
+	.container-fluid {
+		padding-left: 25px;
+		padding-right: 25px;
+	}
+	#first img {
+		width: 250px !important;
 	}
 }
 @media screen and (max-width: 480px) {
